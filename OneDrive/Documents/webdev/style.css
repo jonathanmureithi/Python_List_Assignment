@@ -1,0 +1,59 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  header, footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #2376ea;
+  }
+  
+  .button-group {
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 1em;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #321ee9;
+    transform: scale(1.1);
+  }
+  
+  #dynamic-container p {
+    background-color: #fff8e1;
+    padding: 10px;
+    border: 2px dashed #ff9800;
+    margin-top: 10px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  #description {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  

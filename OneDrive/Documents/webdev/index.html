@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Adventure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fceabb;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #6a1b9a;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+
+    #description {
+      font-size: 1.2em;
+      margin: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-heading">🌍 Welcome to Your Epic Journey!</h1>
+  <p id="description">Click the button to begin your adventure!</p>
+
+  <button id="change-text-btn">📝 Change the Story</button>
+  <button id="add-element-btn">✨ Add a Magic Message</button>
+  <button id="remove-element-btn">❌ Remove the Magic</button>
+
+  <div id="dynamic-container"></div>
+
+  <script>
+    document.getElementById("change-text-btn").addEventListener("click", function () {
+      const desc = document.getElementById("description");
+      desc.textContent = "🌟 Your destiny has changed — a new path unfolds!";
+      desc.style.color = "#ff5722";
+      desc.style.fontWeight = "bold";
+      desc.style.fontSize = "1.4em";
+    });
+  </script>
+
+</body>
+</html>
